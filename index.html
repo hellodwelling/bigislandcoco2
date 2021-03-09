@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Rob Symeonn" property="og:title">
+    
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
+    
+    <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/6S1T6D19YIVE99HNLPI6K7I4G2FJ82DDQY9P60YM.jpeg" property="og:image">
+    <meta content="Rob Symeonn" property="twitter:title">
+    <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/6S1T6D19YIVE99HNLPI6K7I4G2FJ82DDQY9P60YM.jpeg" property="twitter:image">
+    <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/6S1T6D19YIVE99HNLPI6K7I4G2FJ82DDQY9P60YM.jpeg" rel="shortcut icon" type="image/x-icon">
+    <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/6S1T6D19YIVE99HNLPI6K7I4G2FJ82DDQY9P60YM.jpeg" rel="apple-touch-icon">
+    
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Rob Symeonn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+</head>
+<body>
+
+
+<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="py-4 flex flex-row items-center justify-between">
+     
+     <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6S1T6D19YIVE99HNLPI6K7I4G2FJ82DDQY9P60YM.jpeg" alt="Rob Symeonn logo"> </a>
+    
+      <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#about">About Rob</a>
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#services">Quick Facts About Rob</a>
+      
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 
+      focus:outline-none focus:shadow-outline" href="#our-work">Meet Rob</a>
+      
+    
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#for-sale">Rob&#x27;s Work</a>
+      
+         
+      
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
+      
+      
+      
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+                <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                        <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                            <button type="button" onclick= "send_sms(1, 'Rob-Symoenn')" class="w-full px-3 py-4 font-bold font-lg text-white bg-yellow-900 rounded-lg">Send</button>
+                        </div>
+                        
+    
+                </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+  </div>
+
+
+
+
+  
+<div class = "flex w-full flex-col">
+
+<section class="flex flex-col w-full bg-yellow-900 lg:flex-row lg:flex-wrap sm:mx-auto">
+    <div class="flex justify-end p-8 bg-yellow-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
+        <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
+            <h5 class="mb-3 text-3xl text-center font-extrabold text-white leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+                Rob Symeonn
+            </h5>
+            
+            <p class="py-5 mb-5 text-white lg:text-xl text-center lg:text-left">
+                Helping to Return Reggae to its Roots
+            </p>
+            
+        </div>
+    </div>
+    <div class="relative order-first lg:order-last block lg:w-1/2 ">
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob_about.jpg" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+    </div>
+</section>
+
+
+ 
+    
+
+  
+
+    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden bg-white lg:flex-row sm:mx-auto text-yellow-900">
+        <div class="relative lg:w-1/2">
+            
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JYPD4JXM91YXAC849D5SC65YBR0NV623EY0WYNSV.jpeg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+            
+        </div>
+        <div class="py-5 lg:py-0 flex flex-col bg-white lg:py-32 lg:px-16 lg:w-1/2">
+            <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
+                    About Rob
+                </h5>
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left text-yellow-900 lg:text-xl">
+                Reflecting his strong moral beliefs, Symeonn’s lyrics bring a positive and conscious message to his listeners. His first single on Easy Star Records, “Anything for Jah,” released in 1997, was a rockers anthem, expressing Rasta devotion to Jah and a universally relevant spiritual message. Singing in a roots style—evocative of the original sounds of artists such as Bob Marley, Hugh Mundell, and Fred Locks—Symeonn, like those who came before him, understands that a universal message and a catchy song will best spread Jah’s words of love.
+                </p>                
+            </div>
+
+            <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+            	
+
+
+            
+
+            	
+            	
+            	
+            	
+            
+            </div>
+            
+                <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                    <h5 class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-yellow-900 font-extrabold leading-none tracking-wide text-center">
+                        Connect with us on Social
+                    </h5>
+                </div>
+                <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
+                
+                <a target="_blank" href = "https://www.facebook.com/rob.symeonn"> <span class = "text-yellow-400"> <i class="fab fa-facebook fa-3x lg:fa-3x "></i> </span> </a> 
+                
+                
+                
+                <a target="_blank"  href = "https://open.spotify.com/artist/7lGonunLIZowcaoVuIcPAr?autoplay=true"> <span class = "text-yellow-400"> <i class="fab fa-yelp fa-3x lg:fa-3x"></i> </span> </a> 
+                
+                
+                
+                <a target="_blank" href = "https://youtu.be/ECYLqCGWVEc"> <span class = "text-yellow-400"> <i class="fab fa-youtube fa-3x lg:fa-3x "></i> </span> </a> 
+                
+                
+                           
+                  
+               </div>
+            
+        </div>
+
+    </section>
+</div>
+    
+    
+    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6 bg-yellow-900 border-0 border-yellow-200 border-solid text-white">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+            
+            <h5 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                Quick Facts About Rob
+            </h5>
+            <p class="w-full lg:pr-9 max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-yellow-400 border-0 border-yellow-200 lg:text-lg md:text-base">
+                What you should know
+            </p>
+
+            <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
+
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-yellow-200 text-white">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-yellow-200  text-yellow-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-yellow-400">Artist at I- Spark Studio</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-yellow-200 text-white">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-yellow-200  text-yellow-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-yellow-400">Univer Cité Reggae</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-yellow-200 text-white">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-yellow-200  text-yellow-400">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-yellow-400">First single release 1997</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>
+        </div>
+    </section>
+    
+    
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+                <h5 class="mb-3 text-3xl text-yellow-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Meet Rob</h5>
+                <p class="my-3 mb-10 text-xl font-medium text-yellow-500 text-center">See Rob In His Top Moments</p>
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto1_cxcE6cu.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto2_qD2m5Va.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto3_8cmPwXJ.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto4_lKvxBxD.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto5.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto6_qNP82vw.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto7_ELV1k5N.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto8_3xpUjlL.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto9_McmagA4.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto10_Qugk6Kv.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto11_eCjmo3H.jpg" alt=""></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/robphoto12_AnynjhV.jpg" alt=""></div>
+                    
+                 
+                </div>     
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="for-sale" class="relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+                <h5 class="mb-3 text-3xl text-yellow-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Rob&#x27;s Work</h5>
+                <p class="my-3 mb-10 text-xl font-medium text-yellow-500 text-center">Releases and Music</p>
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-indigenous-in-dub/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob4.jpeg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> INDIGENOUS IN DUB </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 01/28/2016 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-rootz-n-creation-state-of-emergency/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob5.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> STATE OF EMERGENCY </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 08/18/2018 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-whom-shall-i-fear-ep/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob6.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> WHOM SHALL I FEAR EP </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 05/19/2015 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-indigenous/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob7.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> INDIGENOUS </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 02/25/2014 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-rob-i-land/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob8.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> ROB I LAND </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 03/15/2013 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-choosen-one/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob10.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> CHOOSEN ONE </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 11/07/2006 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/music/audio/rob-symeonn-forgive-them/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob11.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> FORGIVE THEM </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 11/09/2012 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-live-upright/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob12.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> LIVE UPRIGHT </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 04/19/2013 </p>
+                        
+                    </div>   
+                                   
+                
+                   
+                    <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                      <a target="_blank" href = "https://www.reggaeville.com/artist-details/rob-symeonn/releases/release/rob-symeonn-night-on-the-town/"> 
+                        <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/rob13.jpg" alt="">
+                     </a>   
+                        <p class="font-medium  text-yellow-500 text-center"> NIGHT ON THE TOWN </p>
+                        <p class="font-large font-bold text-yellow-500 text-center"> 12/09/2013 </p>
+                        
+                    </div>   
+                                   
+                 
+                </div>     
+            </div>
+        </div>
+    </div>
+    
+    
+
+<section id= "faqs" class="py-16 bg-white md:py-20 lg:py-24">
+    <div class="max-w-5xl px-12 mx-auto xl:px-0">
+
+        <h2 class="text-3xl text-yellow-900 font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
+        <p class="mt-4 text-xl font-thin text-yellow-900 lg:text-2xl text-center lg:text-left">Your questions answered</p>
+
+        <div class="relative mt-12 space-y-3">
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-yellow-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-yellow-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-yellow-900  lg:text-left">
+                    <span class = "flex text-left lg:text-center">What releases is Rob most well known for?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-yellow-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Symeonn’s second single with Easy Star was “Delilah,” featuring toasting by Ranking Joe. That song, along with “Anything for Jah,” appears on Easy Star Volume One. He later voiced “Keep On Trying” on the “Thai Stick” riddim (this can be found on the full length CD Easy Star Volume Two: Dancehall Culture). Rob also appears extensively on Ticklah’s Hi-Fidelity Dub Sessions: Roots Combination album, as well as on Ticklah’s release, Ticklah Vs. Axelrod.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-yellow-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-yellow-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-yellow-900  lg:text-left">
+                    <span class = "flex text-left lg:text-center">What studio does Rob work with?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-yellow-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Rob works with I- Spark Studio and Da Lion Music</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-yellow-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-yellow-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-yellow-900  lg:text-left">
+                    <span class = "flex text-left lg:text-center">How did Rob make his debut?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-yellow-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Symeonn made his debut as a singer for the One Love International Sound System. From there, he steadily built a following among Caribbean reggae fans in New York.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-yellow-100 select-none">
+                <h4 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-yellow-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-yellow-900  lg:text-left">
+                    <span class = "flex text-left lg:text-center">How do I get in touch with Rob?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h4>
+                <p class="px-2 pt-0 -mt-2 text-yellow-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Rob Symeonn Mangement Jeffrey Bohler /Jah Youth Productions @ jahyouthpro@gmail.com</p>
+            </div>
+
+        
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="py-10 bg-yellow-900">
+    
+        <div class="flex flex-col justify-around text-center md:flex-row">
+            <p class="order-last text-sm leading-tight text-yellow-500 md:order-first"> Crafted with <a  href="https://devdojo.com/tails" class="text-white">ProPhone</a>. Built with ❤️ by our team. </p>
+             
+            <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
+                <li> <a href="#about" class="px-2 md:px-4 text-yellow-500 hover:text-white">About Rob</a> </li>
+                
+                <li> <a href="#services" class="px-2 md:px-4 text-yellow-500 hover:text-white">Quick Facts About Rob</a> </li>
+                
+                
+                <li> <a href="#our-work" class=" px-2 md:px-4 text-yellow-500 hover:text-white">Meet Rob</a> </li>
+                
+                
+                
+                <li> <a href="#faqs" class="px-2 md:px-4 text-yellow-500 hover:text-white">Faqs</a></li>
+                
+                
+                <li> <a href="#for-sale" class="px-2 md:px-4 text-yellow-500 hover:text-white">Rob&#x27;s Work</a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
